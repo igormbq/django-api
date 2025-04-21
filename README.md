@@ -54,6 +54,33 @@ docker compose run --rm web python manage.py test
 
 - `GET /api/parts/common_words/` - Get the 5 most common words in part descriptions
 
+## Project Structure Overview
+
+- **api/**  
+  Main Django project folder containing core settings and configuration:
+  - `settings.py`: Main project settings.
+  - `urls.py`: Root URL configuration.
+  - `wsgi.py` & `asgi.py`: Entry points for WSGI/ASGI servers.
+
+- **parts/**  
+  Django app for your domain logic:
+  - `models.py`: Database models.
+  - `serializers.py`: DRF serializers for API data.
+  - `views.py`: API and view logic.
+  - `urls.py`: App-specific URL routes.
+  - `tests.py`: Automated tests for this app.
+  - `migrations/`: Database migration files.
+
+- **manage.py**  
+  Django’s command-line utility for administrative tasks.
+
+- **requirements.txt**  
+  List of Python dependencies for the project.
+
+- **Dockerfile**  
+  Instructions to build the Docker image for this project.
+
+  
 ## Design Decisions
 
 1. **Django REST Framework**: Chosen for its robust features, excellent documentation, and adherence to REST principles.
