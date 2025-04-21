@@ -32,7 +32,7 @@ A Django REST Framework API for managing parts and analyzing part descriptions.
    - Build the Docker image
    - Start the Django application
    - Run database migrations automatically
-   - Start the development server at [http://localhost:8000](http://localhost:8000)
+   - Start the development server at [http://localhost:8000/api/](http://localhost:8000/api/)
 
 3. **How to execute the tests**:
 ```bash
