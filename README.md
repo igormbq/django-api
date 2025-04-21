@@ -9,12 +9,13 @@ A Django REST Framework API for managing parts and analyzing part descriptions.
 - Comprehensive test suite
 - Containerization: Application is containerized using Docker for consistent deployments.
 
-## Setup and Installation
-# Prerequisites
+
+# Setup and Installation
+##  Prerequisites
 
 - [Docker](https://www.docker.com/get-started) installed
 
-# Quick Start
+## Quick Start
 
 1. **Clone the repository**
    ```bash
