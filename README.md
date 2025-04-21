@@ -32,7 +32,7 @@ A Django REST Framework API for managing parts and analyzing part descriptions.
    - Build the Docker image
    - Start the Django application
    - Run database migrations automatically
-   - Start the development server at [http://localhost:8000/api/](http://localhost:8000/api/)
+   - Start the development server at [http://localhost:8000/](http://localhost:8000/)
 
 3. **How to execute the tests**:
 ```bash
@@ -50,9 +50,9 @@ docker compose run --rm web python manage.py test
 - `PATCH /api/parts/{id}/` - Partially update a specific part
 - `DELETE /api/parts/{id}/` - Delete a specific part
 
-### Common Words Analysis
+### Common Words
 
-- `GET /api/common-words/` - Get the 5 most common words in part descriptions
+- `GET /api/parts/common_words/` - Get the 5 most common words in part descriptions
 
 ## Design Decisions
 
